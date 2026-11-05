@@ -25,13 +25,13 @@ The proxy sits between your tools (AI agents, editors, and API clients) and your
 
 Create and revoke keys, view request counts, and copy the connection details generated for a selected model.
 
-![Ollama API key dashboard](assets/ollama-api-key-dashboard.png)
+![Ollama API key dashboard](ollama-api-key-dashboard.png)
 
 ### Connect a model provider
 
 Example provider configuration using the local proxy URL and a generated key.
 
-![Model provider configuration](assets/model-provider-configuration.png)
+![Model provider configuration](model-provider-configuration.png)
 
 > **Client configuration note:** This proxy forwards Ollama's OpenAI-compatible `/v1/` routes, including `/v1/chat/completions`. In clients that offer an API format selector, choose **OpenAI-compatible / Chat Completions**, not Anthropic Messages (`/v1/messages`), unless you separately add support for that protocol.
 
